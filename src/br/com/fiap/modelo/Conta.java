@@ -6,6 +6,11 @@ public abstract class Conta implements Tributavel {
 	private int numero;
 	private String agencia;
 	
+	public String toString() {
+        return "[titular=" + titular + ", numero=" + numero
+           + ", agencia=" + agencia + "]";
+    }
+	
 	public double getValorImposto() {
         return this.getSaldo() * 0.01;
     }

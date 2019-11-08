@@ -13,13 +13,19 @@ public class TestaConta {
 		
 		c2.transfere(100, c1);
 		c2.saca(1);
-		c2.saca(400);
+		c2.saca(10);
+		c2.setTitular("Danilo");
+		c2.setNumero(123);
+		c2.setAgencia("Centro");
 		
 		
 		System.out.println(c1.getSaldo());
 		System.out.println(c2.getSaldo());
 		
 		System.out.println(c1.getValorImposto());
+		
+		System.out.println(c2);
+		
 
         // testando polimorfismo:
         Tributavel t = c1;

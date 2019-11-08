@@ -6,6 +6,17 @@ public abstract class Conta implements Tributavel {
 	private int numero;
 	private String agencia;
 	
+	public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+
+        Conta outraConta = (Conta) obj;
+
+        return this.numero == outraConta.numero && 
+            this.agencia.equals(outraConta.agencia);
+    }
+	
 	public String toString() {
         return "[titular=" + titular + ", numero=" + numero
            + ", agencia=" + agencia + "]";

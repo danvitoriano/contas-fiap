@@ -18,6 +18,9 @@ public class TestaConta {
 		c2.setNumero(123);
 		c2.setAgencia("Centro");
 		
+		c1.setNumero(123);
+		c1.setAgencia("Centro");
+		
 		
 		System.out.println(c1.getSaldo());
 		System.out.println(c2.getSaldo());
@@ -25,6 +28,8 @@ public class TestaConta {
 		System.out.println(c1.getValorImposto());
 		
 		System.out.println(c2);
+		
+		System.out.println(c1.equals(c2));
 		
 
         // testando polimorfismo:

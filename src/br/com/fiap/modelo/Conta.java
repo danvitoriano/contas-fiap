@@ -1,10 +1,14 @@
 package br.com.fiap.modelo;
 
-public abstract class Conta {
+public abstract class Conta implements Tributavel {
 	protected double saldo;
 	private String titular;
 	private int numero;
 	private String agencia;
+	
+	public double getValorImposto() {
+        return this.getSaldo() * 0.01;
+    }
 
 	public abstract String getTipo();
 

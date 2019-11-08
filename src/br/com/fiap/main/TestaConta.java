@@ -1,6 +1,6 @@
-package main;
+package br.com.fiap.main;
 
-import contas.Conta;
+import br.com.fiap.modelo.Conta;
 
 public class TestaConta {
 	public static void main(String[] args) {

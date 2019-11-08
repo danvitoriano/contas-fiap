@@ -1,4 +1,5 @@
-package contas;
+package br.com.fiap.modelo;
+
 
 public class Conta {
 	protected double saldo;

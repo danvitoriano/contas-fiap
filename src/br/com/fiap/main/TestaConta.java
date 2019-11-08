@@ -1,10 +1,10 @@
 package br.com.fiap.main;
 
-import br.com.fiap.modelo.Conta;
+import br.com.fiap.modelo.ContaCorrente;
 
 public class TestaConta {
 	public static void main(String[] args) {
-		Conta conta = new Conta();
+		ContaCorrente conta = new ContaCorrente();
 		conta.deposita(100);
 		System.out.println(conta.getSaldo());
 	}

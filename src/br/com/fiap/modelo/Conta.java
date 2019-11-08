@@ -1,11 +1,13 @@
 package br.com.fiap.modelo;
 
 
-public class Conta {
+public abstract class Conta {
 	protected double saldo;
 	private String titular;
 	private int numero;
 	private String agencia;
+	
+	public abstract String getTipo();
 	
 	public void deposita(double valor) {
 		this.saldo += valor;

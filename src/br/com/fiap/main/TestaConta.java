@@ -35,5 +35,10 @@ public class TestaConta {
         // testando polimorfismo:
         Tributavel t = c1;
         System.out.println(t.getValorImposto());
+        
+        
+        String s = "fj11";
+        s = s.replaceAll("1", "2");
+        System.out.println(s);
 	}
 }

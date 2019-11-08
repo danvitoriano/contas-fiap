@@ -1,14 +1,18 @@
 package br.com.fiap.modelo;
 
-
 public abstract class Conta {
 	protected double saldo;
 	private String titular;
 	private int numero;
 	private String agencia;
-	
+
 	public abstract String getTipo();
-	
+
+	public void transfere(double valor, Conta conta) {
+		this.saca(valor);
+		conta.deposita(valor);
+	}
+
 	public void deposita(double valor) {
 		this.saldo += valor;
 	}
@@ -44,6 +48,5 @@ public abstract class Conta {
 	public double getSaldo() {
 		return saldo;
 	}
-
 
 }

@@ -1,6 +1,7 @@
 package br.com.fiap.main;
 
 import br.com.fiap.modelo.ContaCorrente;
+import br.com.fiap.modelo.Tributavel;
 
 public class TestaConta {
 	public static void main(String[] args) {
@@ -14,5 +15,11 @@ public class TestaConta {
 		
 		System.out.println(c1.getSaldo());
 		System.out.println(c2.getSaldo());
+		
+		System.out.println(c1.getValorImposto());
+
+        // testando polimorfismo:
+        Tributavel t = c1;
+        System.out.println(t.getValorImposto());
 	}
 }

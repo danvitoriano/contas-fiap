@@ -17,10 +17,15 @@ public abstract class Conta implements Tributavel {
 		conta.deposita(valor);
 	}
 
-	public void deposita(double valor) {
-		this.saldo += valor;
-	}
-
+	 public void deposita(double valor) {
+	     if (valor < 0) {
+	         throw new IllegalArgumentException("Você tentou depositar" + 
+	                                             " um valor negativo");
+	     } else {
+	         this.saldo += valor;        
+	     }        
+	 }
+	 
 	public void saca(double valor) {
 		this.saldo -= valor;
 	}

@@ -12,6 +12,9 @@ public class TestaConta {
 		c2.deposita(200);
 		
 		c2.transfere(100, c1);
+		c2.saca(1);
+		c2.saca(400);
+		
 		
 		System.out.println(c1.getSaldo());
 		System.out.println(c2.getSaldo());
